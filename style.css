@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #1b2653;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.header-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.left-content{
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.right-content{
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#register-button{
+    background-color: #1b2653;
+    border: solid 2px;
+    border-radius: 2em;
+    padding: 6px;
+    cursor: pointer;
+
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+
+    width: 25%;
+    height: 3em;
+}
+
+/* Main */
+
+main{
+    width: 100%;
+    height: 70vh;
+}
+
+.challenges-box{
+    width: 100%;
+    height: 75em;
+    margin-top: 10em;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    font-family: 'Roboto';
+}
+
+.challenges-box h3{
+    padding-right: 0.4em;
+    padding-top: 0.4em;
+}
+
+/* Challenge 1 */
+
+.challenge-1-container{
+    width: 26%;
+    height: 29em;
+    display: flex;
+}
+
+.challenge-1-content{
+    width: 95%;
+    height: 100%;
+    border: solid 1px ;
+    border-radius: 0.5em;
+}
+
+.challenge-1-content-agent1{
+    align-items: center;
+
+    display: flex;
+    padding: 13px;
+}
+
+.challenge-1-content-agent1-info{
+    color: #1b2653;
+    padding: 9px;
+
+    font-weight: 400;
+    font-size: larger;
+}
+
+.challenge-1-content-agent2{
+    align-items: center;
+
+    display: flex;
+    padding: 13px;
+}
+
+.challenge-1-content-agent2-info{
+    color: #1b2653;
+    padding: 9px;
+
+    font-weight: 400;
+    font-size: larger;
+}
+
+#phone-action1{
+    color:  #FE6613;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#phone-action2{
+    color:  #FE6613;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.agent-style{
+    width:  45%;
+    height: 50%;
+    border: solid 1.5px;
+    border-radius: 0.5em;
+}
+
+/* Challenge 2 */
+
+.challenge-2-container{
+    width: 26%;
+    height: 29em;
+    display: flex;
+}
+
+.challenge-2-content{
+    width: 95%;
+    height: 100%;
+    border: solid 1px ;
+    border-radius: 0.5em;
+}
+
+.challenge-2-content h2{
+    color: #1b2653;
+    padding: 0.5em;
+    margin-right: 3em;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.challenge-2-content-form{
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input-cpf{
+    width: 90%;
+    padding: 10px;
+
+    border: solid 1px;
+    border-radius: 0.5em;
+    
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+#input-cell{
+    width: 90%;
+    padding: 10px;
+
+    border: solid 1px;
+    border-radius: 0.5em;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+#text-area{
+    width: 90%;
+    height: 120px;
+    line-height: 20px;
+    max-width: 450px;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+
+    border: solid 1px;
+    border-radius: 0.5em;
+}
+
+.send-btn{
+    width: 35%;
+    height: 3em;
+    border-radius: 0.5em;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+
+    font-family: 'Roboto';  
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+
+    margin-right: 14em;
+}
+/* Challenge 3 */
+
+.challenge-3-container{
+    width: 26%;
+    height: 29em;
+    display: flex;
+}
+
+.challenge-3-content{
+    width: 95%;
+    height: 100%;
+    border: solid 1px ;
+    border-radius: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge-3-content h2{
+    color: #1b2653;
+    padding: 0.5em;
+    margin-right: 3em;
+    font-size: 30px;
+    font-weight: 400;
+
+    margin-right: 8em;
+}
+
+.challenge-3-content-inputs{
+    width: 80%;
+    height: 40%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#number1{
+    height: 3em;
+
+    border: solid 1px;
+    border-radius: 0.5em;
+}
+
+#number2{
+    height: 3em;
+
+    border: solid 1px;
+    border-radius: 0.5em;
+}
+
+#number3{
+    height: 3em;
+
+    border: solid 1px;
+    border-radius: 0.5em;
+}
+
+#res{
+    height: 3em;
+
+    border: solid 2px #FE6613;
+    border-radius: 0.5em;
+}
+
+#calc-btn{
+    width: 33%;
+    height: 2em;
+    border-radius: 0.5em;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+
+    font-family: 'Roboto';  
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+
+    margin-right: 14em;
+}
+
+/* Challenge 4 */
+
+.challenge-4-container{
+    width: 26%;
+    height: 33em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge-4-content{
+    width: 95%;
+    height: 100%;
+    border: solid 1px;
+    border-radius: 0.5em;
+}
+
+#myHomeImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+}
+
+#modal-img{
+    width: 80%;
+    height: 3em;
+    border-radius: 0.5em;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+
+
+    font-family: 'Roboto';  
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Challenge 5 */
+
+.challenge-5-container{
+    width: 26%;
+    height: 29em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#challenge-5-content{
+    width: 95%;
+    height: 100%;
+    border: solid 1px ;
+    border-radius: 0.5em;
+
+    background-image: url(imgs/House.png);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.myHomeImageDownload {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    transition: transform 2s ease-in-out;
+}
+
+.imovel-guide{
+    background-color: #FE6613;
+    opacity: 80%;
+
+    width: 80%;
+    height: 2em;
+    border-radius: 0.5em;
+
+
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1em;
+}
+
+#download{
+    width: 80%;
+    height: 3em;
+    border-radius: 0.5em;
+    background-color: #FE6613;
+    color: white;
+    border: none;
+
+
+    font-family: 'Roboto';  
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+/* Challenge 6 */
+
+.challenge-6-container{
+    width: 26%;
+    height: 29em;
+    display: flex;
+}
+
+.challenge-6-content{
+    width: 95%;
+    height: 100%;
+    border: solid 1px ;
+    border-radius: 0.5em;
+    overflow: hidden;
+
+    
+}
+
+.myHomeImageZoom{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    transition: 4s all ease-in-out;
+    animation-name: zoom;
+    animation-duration: 8s;
+}
+
+@keyframes zoom {
+    0%   {transform:scale(2)}
+    100% {transform: scale(1)}
+}
+
+@media only screen and (max-width: 500px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: flex;
+        padding: auto;
+        margin-right: 2em;
+    }
+
+    header{
+        height: 4em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-container{
+        display: flex;
+    }
+
+    /* Esconder o menu regular em telas menores */
+    .left-content img{
+        display: flex;
+        height: 4em;
+        margin-left: 2em;
+    }
+
+    .left-content nav{
+        display: none;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #1b2653;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-menu a {
+        padding: 1em;
+        color: white;
+        text-decoration: none;
+    }
+    /* Ajustes gerais para telas menores */
+    body {
+        font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
+    /* Main */
+    .challenges-box {
+        margin-top: 5em;
+    }
+
+    .challenge-1-container,
+    .challenge-2-container,
+    .challenge-3-container,
+    .challenge-4-container,
+    .challenge-5-container,
+    .challenge-6-container {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Challenge 1 */
+    .challenge-1-container,
+    .challenge-2-container,
+    .challenge-3-container,
+    .challenge-4-container,
+    .challenge-5-container,
+    .challenge-6-container {
+        margin-bottom: 2em;
+    }
+
+    /* Challenge 2 */
+
+    .challenge-2-content{
+        height: 30em;
+    }
+
+    .challenge-2-content h2 {
+        margin-right: 0;
+    }
+
+    .send-btn {
+        margin-right: 0;
+        width:  8em;
+        height: 3em;
+    }
+
+    /* Challenge 3 */
+
+    .challenge-3-content  {
+       height: 20em;
+    }
+
+    .challenge-3-content h2 {
+        margin-right: 0;
+    }
+
+    .challenge-3-content-inputs{
+        width: 20em;
+        height: 20em;
+    }
+
+    #number1{
+        width: 10em;
+    }
+
+    #number2{
+        width: 10em;
+    }
+
+    #number3{
+        width: 10em;
+    }
+
+    #res{
+        width: 10em;
+    }
+
+
+    #calc-btn {
+        width: 10em;
+    }
+
+    /* Challenge 4 */
+    #modal-img {
+        margin-right: 0;
+    }
+
+    /* Challenge 5 */
+    #challenge-5-content{
+        height: 30em;
+    }
+
+    #download {
+        height: 2em;
+    }
+
+    /* Challenge 6 */
+    .myHomeImageZoom {
+        animation: none;
+        transform: scale(1);
+    }
+}

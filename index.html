@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="script.js"></script>
+    <title>Imovel Guide</title>
+</head>
+<body>
+    <header>
+        <section class="header-container">
+
+            <div class="left-content">
+                <img src="imgs/logo.png" alt="logo">
+                <nav>Condomínios</nav>
+                <nav>Fórum</nav>
+                <nav>Guia</nav>
+                <nav>Artigos</nav>
+                <nav>Ferramentas</nav>
+            </div>
+
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+            <div class="right-content">
+                <nav>Cotar Imóvel</nav>
+                <nav>Planos</nav>
+                <nav>Entrar</nav>
+                <button id="register-button">CADASTRE-SE</button>
+                
+                
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="challenges-box">
+            <div class="challenge-1-container">
+                <h3>1</h3>
+                <div class="challenge-1-content">
+                    <div class="challenge-1-content-agent1">
+                        <img src="imgs/Corretor1.png" class="agent-style">
+                        <div class="challenge-1-content-agent1-info">
+                            <h3>Nome Corretora</h3>
+                            <p>3.000 pontos</p>
+                            <a id="phone-action1" onclick="textSubstitute1()">ver telefone</a>
+                        </div>
+                    </div>
+                    <div class="challenge-1-content-agent2">
+                        <img src="imgs/Corretor2.png" class="agent-style">
+                        <div class="challenge-1-content-agent2-info">
+                            <h3>Nome Corretor</h3>
+                            <p>1.260 pontos</p>
+                            <a id="phone-action2" onclick="textSubstitute2()">ver telefone</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="challenge-2-container">
+                <h3>2</h3>
+                <div class="challenge-2-content" >
+                    <h2>Mande uma mensagem: </h2>
+                    <div class="challenge-2-content-form">
+
+                        <input type="text" placeholder="Digite seu CPF" id="input-cpf" oninput="aplicarMascaraCpf(this)"  maxlength="14">
+
+                        <input type="text" placeholder="Digite seu telefone" id="input-cell" oninput="aplicarMascaraTelefone(this)" required>
+
+                        <textarea id="text-area" placeholder="Digite o assunto"></textarea>
+                        
+                        <button class="send-btn">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </div>
+            <div class="challenge-3-container ">
+                <h3>3</h3>
+                <div class="challenge-3-content">
+                    <h2>Regra de 3</h2>
+                    <div class="challenge-3-content-inputs">
+                        <input type="number" id="number1" placeholder="Primeiro número">
+                        <input type="number" id="number3" placeholder="Terceiro número">
+                        <input type="number" id="number2" placeholder="Segundo número">
+                        <input type="text" id="res" placeholder="Resultado" readonly>
+
+                        <button id="calc-btn" onclick="calcularRegraDeTres()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="challenge-4-container">
+                <h3>4</h3>
+                <div class="challenge-4-content ">
+                    <img src="imgs/House.png" id="myHomeImage">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+                <br>
+                <button id="modal-img">ABRIR IMAGEM NO MODAL</button>
+            </div>
+            <div class="challenge-5-container">
+                <h3>5</h3>
+                <div id="challenge-5-content">
+                    <div class="imovel-guide">Imovel Guide</div>
+                    
+                </div>
+                <br>
+                <button id="download" onclick="autoClick()">Download</button>
+            </div>
+            <div class="challenge-6-container">
+                <h3>6</h3>
+                <div class="challenge-6-content">
+                    <img src="imgs/House.png" class="myHomeImageZoom">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
